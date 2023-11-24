@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>CALCULATOR</h1>
+        <table align="center">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="inp">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="clearall()">AC</button>
+                </td>
+                <td>
+                    <button onclick="clearone()">C</button>
+                </td>
+                <td>
+                    <button onclick="allButtons('%')">%</button>
+                </td>
+                <td>
+                    <button onclick="allButtons('/')">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="allButtons(7)">7</button>
+                </td>
+                <td>
+                    <button onclick="allButtons(8)">8</button>
+                </td>
+                <td>
+                    <button onclick="allButtons(9)">9</button>
+                </td>
+                <td>
+                    <button onclick="allButtons('*')">x</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="allButtons(4)">4</button>
+                </td>
+                <td>
+                    <button onclick="allButtons(5)">5</button>
+                </td>
+                <td>
+                    <button onclick="allButtons(6)">6</button>
+                </td>
+                <td>
+                    <button onclick="allButtons('-')">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="allButtons(1)">1</button>
+                </td>
+                <td>
+                    <button onclick="allButtons(2)">2</button>
+                </td>
+                <td>
+                    <button onclick="allButtons(3)">3</button>
+                </td>
+                <td>
+                    <button onclick="allButtons('+')">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="allButtons(0)">0</button>
+                </td>
+                <td>
+                    <button onclick="allButtons('.')">.</button>
+                </td>
+                <td>
+                    <button onclick="equal()">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
